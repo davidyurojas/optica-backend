@@ -1,0 +1,146 @@
+<!-- fragment-home.html -->
+<div th:fragment="contenido">
+
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Advanced Form</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="#">Home</a></li>
+            <li class="breadcrumb-item active">Advanced Form</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <!-- SELECT2 EXAMPLE -->
+      <div class="card card-outline card-lightblue">
+        <div class="card-header">
+          <h3 class="card-title">Nuevo Usuario</h3>
+
+
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Nivel de Usuario *</label>
+                <select class="custom-select">
+                  <option>Administrador</option>
+                  <option>Usuario 1</option>
+                  <option>Usuario 3</option>
+                  <option>Usuario 4</option>
+                  <option>Usuario 5</option>
+                </select>
+              </div>
+              <!-- /.form-group -->
+
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Estatus *</label>
+                <select class="custom-select">
+                  <option>Activo</option>
+                  <option>Inactivo</option>
+
+                </select>
+              </div>
+              <!-- /.form-group -->
+
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6">
+
+              <div class="form-group">
+                <label>Nombre(s) *</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Nombre(s) del usuario">
+              </div>
+              <!-- /.form-group -->
+
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Apellido(s)*</label>
+                <input type="text" class="form-control" id="apellido" placeholder="Apellido(s) del usuario">
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6">
+
+              <!-- phone mask -->
+              <div class="form-group">
+                <label>Teléfono *</label>
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                  </div>
+                  <input type="text" class="form-control"
+                    data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask
+                    placeholder="Teléfono de contacto">
+                </div>
+                <!-- /.input group -->
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Correo electrónico *</label>
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <input type="text" class="form-control"
+                    data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask
+                    placeholder="Correo electrónico del contacto">
+                </div>
+                <!-- /.input group -->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Password *</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Password">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Confirmar Password *</label>
+                <input type="text" class="form-control" id="nombre" placeholder="Confirmar Password">
+              </div>
+            </div>
+          </div>
+          <!-- /.row -->
+
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+
+          <a class="btn btn-success btn-sm mr-2" href="#" data-link role="button"><i class="fas fa-save mr-2">
+            </i>Guardar</a>
+          <a class="btn btn-secondary btn-sm mr-2" href="#" data-link role="button"><i class="fas fa-eraser mr-2">
+            </i>Limpiar</a>
+          <a class="btn btn-danger btn-sm mr-2" href="#" data-link role="button"><i class="fas fa-window-close mr-2">
+            </i>Cancelar</a>
+
+        </div>
+      </div>
+      <!-- /.card -->
+
+    </div>
+    <!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+
+
+</div>

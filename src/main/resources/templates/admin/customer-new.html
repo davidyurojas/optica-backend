@@ -1,0 +1,192 @@
+<!-- fragment-home.html -->
+<div th:fragment="contenido">
+
+  <!-- Content Header (Page header) -->
+  <section class="content-header">
+    <div class="container-fluid">
+      <div class="row mb-2">
+        <div class="col-sm-6">
+          <h1>Clientes</h1>
+        </div>
+        <div class="col-sm-6">
+          <ol class="breadcrumb float-sm-right">
+            <li class="breadcrumb-item"><a href="/admin/dashboard" data-link>Dashboard</a></li>
+            <li class="breadcrumb-item"><a href="/admin/customer" data-link>Clientes</a></li>
+            <li class="breadcrumb-item active">Nuevo Cliente</li>
+          </ol>
+        </div>
+      </div>
+    </div><!-- /.container-fluid -->
+  </section>
+  <!-- Main content -->
+  <section class="content">
+    <div class="container-fluid">
+      <!-- SELECT2 EXAMPLE -->
+      <div class="card card-outline card-lightblue">
+        <div class="card-header">
+          <h3 class="card-title">Nuevo Cliente</h3>
+        </div>
+        <!-- /.card-header -->
+        <div class="card-body">
+          <div class="row">
+            <!-- /.col -->
+            <div class="col-md-6">
+
+              <div class="form-group">
+                <label>Nombre(s) *</label>
+                <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Nombre(s) del usuario">
+              </div>
+              <!-- /.form-group -->
+
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Apellido(s)*</label>
+                <input type="text" class="form-control form-control-sm" id="apellido" placeholder="Apellido(s) del usuario">
+              </div>
+            </div>
+            <!-- /.col -->
+            <div class="col-md-6">
+
+              <!-- phone mask -->
+              <div class="form-group">
+                <label>Fecha de nacimiento *</label>
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
+                  </div>
+                  <input type="text" class="form-control form-control-sm" data-inputmask-alias="datetime"
+                    data-inputmask-inputformat="dd/mm/yyyy" data-mask>
+                </div>
+                <!-- /.input group -->
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Edad</label>
+
+                <input type="text" class="form-control form-control-sm" disabled placeholder="0">
+
+                <!-- /.input group -->
+              </div>
+            </div>
+            <div class="col-md-6">
+
+              <!-- phone mask -->
+              <div class="form-group">
+                <label>Teléfono 1</label>
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                  </div>
+                  <input type="text" class="form-control form-control-sm"
+                    data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask
+                    placeholder="Teléfono de contacto">
+                </div>
+                <!-- /.input group -->
+              </div>
+
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Teléfono 2</label>
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-phone"></i></span>
+                  </div>
+                  <input type="text" class="form-control form-control-sm"
+                    data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask
+                    placeholder="Móvil de contacto">
+                </div>
+                <!-- /.input group -->
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Correo electrónico *</label>
+
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                  </div>
+                  <input type="text" class="form-control form-control-sm"
+                    data-inputmask="'mask': ['999-999-9999 [x99999]', '+099 99 99 9999[9]-9999']" data-mask
+                    placeholder="Correo electrónico del contacto">
+                </div>
+                <!-- /.input group -->
+              </div>
+            </div>
+            <div class="col-md-6">
+
+              <div class="form-group">
+                <label>Ocupación</label>
+                <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Ocupación">
+              </div>
+              <!-- /.form-group -->
+
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Domicilio Particular</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Domicilio particular"></input>
+              </div>
+            </div>
+
+          </div>
+          <!-- /.row -->
+          
+          <h3 class="text-lg mt-4">Convenio con empresas</h3>
+          <hr>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Empresa</label>
+                <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Empresa (solo para convenios)">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Nombre o razón social</label>
+                <input type="text" class="form-control form-control-sm" id="nombre" placeholder="Nombre o razón social">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>RUC</label>
+                <input type="text" class="form-control form-control-sm" id="nombre" placeholder="RUC">
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="form-group">
+                <label>Domicilio de facturación</label>
+                <input type="text" class="form-control form-control-sm" placeholder="Domicilio de facturación"></input>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        <!-- /.card-body -->
+        <div class="card-footer">
+
+          <a class="btn btn-success btn-sm mr-2" href="#" data-link role="button"><i class="fas fa-save mr-2">
+            </i>Guardar</a>
+          <a class="btn btn-secondary btn-sm mr-2" href="#" data-link role="button"><i class="fas fa-eraser mr-2">
+            </i>Limpiar</a>
+          <a class="btn btn-danger btn-sm mr-2" href="#" data-link role="button"><i class="fas fa-window-close mr-2">
+            </i>Cancelar</a>
+
+        </div>
+      </div>
+      <!-- /.card -->
+
+    </div>
+    <!-- /.container-fluid -->
+  </section>
+  <!-- /.content -->
+
+
+</div>
